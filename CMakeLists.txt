@@ -3,9 +3,6 @@
 
 cmake_minimum_required (VERSION 3.1 FATAL_ERROR)
 
-cmake_policy(SET CMP0127 OLD)
-cmake_policy(SET CMP0115 OLD)
-
 project (soxr C)
 set (DESCRIPTION_SUMMARY
     "High quality, one-dimensional sample-rate conversion library")
@@ -41,10 +38,10 @@ if (NOT CMAKE_BUILD_TYPE)
     "Build type, one of: None Debug Release RelWithDebInfo MinSizeRel." FORCE)
 endif ()
 
-option (BUILD_TESTS "Build sanity-tests." ON)
+option (BUILD_TESTS "Build sanity-tests." OFF)
 option (BUILD_EXAMPLES "Build examples." OFF)
 option (WITH_OPENMP "Include OpenMP threading." ON)
-option (WITH_LSR_BINDINGS "Include a `libsamplerate'-like interface." ON)
+option (WITH_LSR_BINDINGS "Include a `libsamplerate'-like interface." OFF)
 
 cmake_dependent_option (BUILD_SHARED_LIBS
   "Build shared (dynamic) soxr libraries." ON
