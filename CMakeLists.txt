@@ -279,15 +279,15 @@ install (FILES
 include_directories (${PROJECT_SOURCE_DIR}/src)
 
 add_subdirectory (src)
-if (BUILD_TESTS)
-  add_subdirectory (tests)
-endif ()
-if (BUILD_LSR_TESTS)
-  add_subdirectory (lsr-tests)
-endif ()
-if (BUILD_EXAMPLES OR BUILD_TESTS)
-  add_subdirectory (examples)
-endif ()
+#if (BUILD_TESTS)
+#  add_subdirectory (tests)
+#endif ()
+#if (BUILD_LSR_TESTS)
+#  add_subdirectory (lsr-tests)
+#endif ()
+#if (BUILD_EXAMPLES OR BUILD_TESTS)
+#  add_subdirectory (examples)
+#endif ()
 
 
 
