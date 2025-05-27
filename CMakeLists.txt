@@ -3,7 +3,7 @@
 
 cmake_minimum_required (VERSION 3.1 FATAL_ERROR)
 
-cmake_policy(SET CMP0127 OLD)
+set(CMAKE_POLICY_DEFAULT_CMP0127 OLD)
 
 project (soxr C)
 set (DESCRIPTION_SUMMARY
