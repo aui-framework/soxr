@@ -5,7 +5,7 @@
 
 # Can generate vr-coefs.h but it complicates cross-compiling & non-cmake builds
 
-cmake_policy(SET CMP0115 OLD)
+set(CMAKE_POLICY_DEFAULT_CMP0115 OLD)
 
 if (NOT EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/vr-coefs.h)
   include_directories(${CMAKE_CURRENT_BINARY_DIR})
